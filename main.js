@@ -4,6 +4,8 @@ function eat_ghost(power_pellet_active, touching_ghost) {
 }
 
 function score(touching_power_pellet, touching_dot) {
+    if(touching_dot) return true;
+    if(touching_power_pellet) return true;
     return false
 }
 
